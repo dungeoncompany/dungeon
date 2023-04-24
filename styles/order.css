@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background.png);
+    font-family: 'Finlandica', sans-serif;    
+}
+
+div {
+    position: relative;
+    animation: jump 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    transform: translateY(-100px);
+}
+
+@keyframes jump {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#logo {
+    margin-top: 3%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+#logotype {
+    width: 150px;
+    height: 50px;
+}
+
+#navigation {
+    display: inline-block;
+    margin-left: 50%;
+}
+
+#menu {
+    margin-top: 3%;
+}
+
+#menu a {
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu a:hover {
+    color: blueviolet;
+}
+
+p {
+    font-size: 25px;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 35px;
+    margin-bottom: 3%;
+}
+
+#title {
+    margin-top: 8%;
+    text-align: center;
+    color: white;
+}
+
+#info {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}
+
+#mail, #vk {
+    display: inline-block;
+    margin: 30px;
+}
+
+#mail_logo, #vk_logo {
+    object-fit: cover;
+    margin-right: 25px;
+}

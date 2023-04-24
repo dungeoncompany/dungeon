@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background.png);
+    font-family: 'Finlandica', sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+    background-repeat: repeat;   
+}
+ul {
+    float: right;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+div {
+    animation: change-size 1s ease-in-out;
+}
+
+@keyframes change-size {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#logo {
+    margin-top: 3%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+#logotype {
+    width: 150px;
+    height: 50px;
+}
+
+#navigation {
+    display: inline-block;
+    margin-left: 50%;
+}
+
+#menu {
+    margin-top: 3%;
+}
+
+#menu a {
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu a:hover {
+    color: blueviolet;
+}
+
+p {
+    font-size: 25px;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 35px;
+    margin-bottom: 3%;
+}
+
+#title {
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+}
+
+#order {
+    text-align: center;
+}
+
+button {
+    font-family: 'Finlandica', sans-serif;
+}
+
+.button_order {
+    margin: 30px;
+    background-color: rgba(28,28,28,0);
+    border-color: blueviolet;
+    color: blueviolet;
+    font-size: 25px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.button_order:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+/*.button_order:hover {
+    background-color: blueviolet;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.button_order:hover {
+    border-color: white;
+    background-color: rgba(28,28,28,0);
+    color: white;
+}*/
