@@ -85,6 +85,46 @@ a {
     color: blueviolet;
 }
 
+#navigation-mobile {
+    display: inline-block;
+    margin-left: 50%;
+}
+
+#navigation-mobile:hover #menu-mobile {
+    display: block;
+}
+
+#button-menu img {
+    width: 32px;
+    height: 32px;
+  }
+  
+/* Выпадающее содержимое (скрыто по умолчанию) */
+#menu-mobile {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* Ссылки внутри выпадающего списка */
+#menu-mobile a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+#menu-monile a:hover {
+    background-color: #ddd;
+}
+
+#navigation-mobile:hover #button-menu {
+    background-color: blueviolet;
+}
+
 p {
     margin-bottom: 5%;
     font-size: 25px;
@@ -125,3 +165,21 @@ h1 {
 .images:hover {
     transform: scale(1.2);
 }
+
+#navigation, #navigation-mobile {
+    display: none;
+  }
+  
+  /* Для планшетов и меньше */
+  @media (max-width: 736px) {
+    #navigation-mobile {
+      display: inline-block;
+    }
+  }
+  
+  /* Для "квадратных" десктопных мониторов и выше */
+  @media (min-width: 737px) {
+    #navigation {
+      display: inline-block;
+    }
+  }
